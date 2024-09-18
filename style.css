@@ -1,0 +1,125 @@
+/*Keep comments for all the things you needed to look up.*/
+
+body {
+    /*standard desktop landing page height*/
+    height: 960px;
+    width: auto;
+}
+
+#introduction, #copyright{
+    display: flexbox;
+    background-color: #1f2937;
+    color: #F9FAF8;
+}
+
+#header {
+    display: flex;
+    flex-basis: auto;
+}
+
+/*how to separate #logo from #links*/
+
+#links {
+    align-items: center;
+    /*how to remove bullet points*/
+    list-style-type: none;
+}
+
+#hook {
+    display: flex;
+}
+
+.hook-text {
+    margin: 40px;
+}
+
+.hook-img {
+    height: 300px;
+    width: auto;
+    margin: 40px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 5px;
+}
+
+button {
+    background-color: #3882F6;
+    color:#F9FAF8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+/*how to center*/
+#features-label {
+    margin: 40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+/*how to align side-by-side*/
+#features {
+    display: flex;
+    margin: 50
+}
+
+.feature {
+    margin: 40px;
+}
+
+/*text-wrap property not working*/
+p .feature-subtext {
+    text-wrap: balance;
+}
+
+/*how to round and color border*/
+.feature-img {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #3882F6;
+    border-radius: 10px;
+    height: 100px;
+    width: auto;
+}
+
+#testimonial {
+    background-color: #E5E7EB;
+    padding: 110px;
+}
+
+#quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.banner {
+    display: flex;
+    margin: 70px 85px;
+    padding: 40px 100px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.banner button {
+    border-color: #E5E7EB;
+}
+
+#copyright {
+    text-align: center;
+    padding: 40px;
+}
