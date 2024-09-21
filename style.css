@@ -14,16 +14,29 @@ body {
 
 #header {
     display: flex;
-    flex-basis: auto;
+    flex: auto;
+    padding: 20px;
 }
 
 /*how to separate #logo from #links*/
+#logo, .links {
+    /*remove default ul margin by setting margin properties*/
+    margin: 0px auto;
+    flex: 1;
+    justify-content: space-between
+}
 
-#links {
-    align-items: center;
+.link {
+    display: inline;
     /*how to remove bullet points*/
     list-style-type: none;
 }
+
+/*
+a {
+    margin: 5px;
+}
+*/
 
 #hook {
     display: flex;
@@ -72,7 +85,8 @@ button {
 /*how to align side-by-side*/
 #features {
     display: flex;
-    margin: 50
+    margin: 50px;
+    justify-content: space-evenly;
 }
 
 .feature {
