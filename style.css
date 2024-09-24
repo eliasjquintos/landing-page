@@ -2,6 +2,7 @@
 
 body {
     /*standard desktop landing page height*/
+    /*to keep the footer in place*/
     height: 960px;
     width: auto;
 }
@@ -15,20 +16,8 @@ body {
 
 #header {
     display: flex;
-    flex: auto;
-    padding-top: 20px
-}
-
-/*how to separate #logo from #links*/
-#logo, .links {
-    /*remove default ul margin by setting margin properties*/
-    margin: 0px auto;
-    flex: 1;
     justify-content: space-between;
-}
-
-.links {
-    justify-content: right;
+    padding-top: 20px;
 }
 
 #logo {
@@ -37,6 +26,12 @@ body {
     font-weight: 100;
 }
 
+/*remove default ul margin by setting margin properties*/
+.links {
+    margin: 0px auto;
+}
+
+/*how to separate #logo from #links*/
 .link {
     display: inline;
     /*how to remove bullet points*/
@@ -47,6 +42,8 @@ body {
 
 #hook {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 70px 0px;
 }
 
@@ -67,6 +64,7 @@ body {
 }
 
 button {
+    font-size: 18px;
     background-color: #3882F6;
     color:#F9FAF8;
     border-style: solid;
@@ -78,6 +76,7 @@ button {
 .hook-img {
     height: 250px;
     width: auto;
+    margin: 15px 0px;
 }
 
 /*how to center*/
@@ -91,19 +90,20 @@ button {
 
 /*how to align side-by-side*/
 #features {
-    padding: 0 210px;
+    padding: 0 130px;
     /*display: flex from the container*/
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .feature {
     /*flex-basis and flex to get desired alignment*/
     width: 154px;
     height: 183px;
-    justify-content: center;
     margin: 7px;
-    flex-basis: 0;
-    flex: 1 1 0px;
     /*text-align goes in this div!!!*/
     text-align: center;
 }
@@ -115,8 +115,8 @@ p .feature-subtext {
 
 /*how to round and color border*/
 .feature-img {
-    height: 105px;
-    width: 105px;
+    height: 120px;
+    width: 120px;
     overflow: hidden;
     border-style: solid;
     border-width: 3px;
@@ -144,13 +144,13 @@ p .feature-subtext {
 }
 
 .banner {
-    display: flex;
-    margin: 70px 85px;
-    padding: 40px 100px;
+    display: flex; 
+    margin: 75px 130px;
+    padding: 40px 70px;
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 8px;
-    justify-content: center;
+    justify-content: space-between;    
 }
 
 .banner button {
@@ -158,6 +158,8 @@ p .feature-subtext {
 }
 
 #copyright {
+    /*footer*/
     text-align: center;
     padding: 40px;
+    bottom: 0;
 }
